@@ -1,0 +1,17 @@
+# Entorno virtual
+.env
+env/
+etl.log
+pyvenv.cfg 
+
+# Variables de entorno (SEGURIDAD)
+.env
+
+# Logs
+*.log
+
+# Docker
+.docker/
+
+# Archivos de datos (opcional, si el CSV es muy pesado)
+data/*.csv
