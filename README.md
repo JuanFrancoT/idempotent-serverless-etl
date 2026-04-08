@@ -2,6 +2,8 @@
 
 This project implements a **serverless ETL (Extract, Transform, Load) pipeline** on AWS using modern data engineering practices. It automatically processes CSV files uploaded to Amazon S3, transforms the data, and loads it into a MySQL database hosted on Amazon RDS.
 
+This project successfully processed **368,999 records** using a serverless ETL pipeline on AWS.
+
 ---
 
 ## Architecture Overview
@@ -19,7 +21,7 @@ The pipeline follows an event-driven architecture:
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 * **AWS S3** – Data ingestion
 * **AWS Lambda (Docker)** – Serverless compute
@@ -32,7 +34,7 @@ The pipeline follows an event-driven architecture:
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 ### 1. Extract
 
@@ -72,7 +74,7 @@ CREATE TABLE orders (
 
 ---
 
-## 🐳 Docker Setup
+## Docker Setup
 
 ### Dockerfile
 
@@ -89,7 +91,7 @@ CMD ["app.lambda_handler"]
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 ```txt
 boto3
@@ -98,7 +100,7 @@ mysql-connector-python
 
 ---
 
-## ☁️ Deployment (AWS)
+## Deployment (AWS)
 
 ### 1. Build Docker Image
 
@@ -169,7 +171,7 @@ app.lambda_handler
 
 ---
 
-## 📊 Example Input Data
+## Example Input Data
 
 ```csv
 order_id,store_id,order_amount,order_moment_created
@@ -179,7 +181,7 @@ order_id,store_id,order_amount,order_moment_created
 
 ---
 
-## 📈 Performance Considerations
+## Performance Considerations
 
 * Batch inserts using `executemany()` for efficiency
 * Idempotent loads using `ON DUPLICATE KEY UPDATE`
@@ -187,7 +189,7 @@ order_id,store_id,order_amount,order_moment_created
 
 ---
 
-## 🧪 Testing & Evidence
+## Testing & Evidence
 
 #### 1. Success CSV file uploaded to S3
 ![Airflow DAG Progress](docs\s3-upload.png)
