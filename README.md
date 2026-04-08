@@ -183,17 +183,17 @@ app.lambda_handler
 ## Testing & Evidence
 
 #### 1. Success CSV file uploaded to S3
-![S3](docs\s3-upload.png)
+![S3](docs/s3-upload.png)
 
 #### 2. Lambda execution logs (CloudWatch)
-![lambda](docs\lambda_function.png)
-![lambda2](docs\lambda_logs.png)
+![lambda](docs/lambda_function.png)
+![lambda2](docs/lambda_logs.png)
 
 #### 3. inserted data in MySQL (RDS)
-![RDS](docs\inserted_data_rds.png)
+![RDS](docs/inserted_data_rds.png)
 
 #### 4. Docker image stored in Amazon ECR
-![ECR](docs\ecr_docker_image.png)
+![ECR](docs/ecr_docker_image.png)
 
 ---
 
