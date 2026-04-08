@@ -1,0 +1,20 @@
+# Entornos virtuales (MUY IMPORTANTE)
+env/
+venv/
+.venv/
+
+# Archivos de caché de Python
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de configuración local y logs
+.env
+*.log
+.git/
+.gitignore
+
+# Archivos de sistema (Mac/Windows)
+.DS_Store
+Thumbs.db

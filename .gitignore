@@ -15,3 +15,13 @@ pyvenv.cfg
 
 # Archivos de datos (opcional, si el CSV es muy pesado)
 data/*.csv
+
+__pycache__/
+*.pyc
+.env
+.env.*
+venv/
+env/
+*.log
+.DS_Store
+node_modules/
