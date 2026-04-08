@@ -61,7 +61,7 @@ ON DUPLICATE KEY UPDATE
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 ```sql
 CREATE TABLE orders (
@@ -169,15 +169,6 @@ app.lambda_handler
 * Bucket: your data bucket
 * Optional filters: `.csv`
 
----
-
-## Example Input Data
-
-```csv
-order_id,store_id,order_amount,order_moment_created
-1,101,25.50,03/01/2024 10:30:00 AM
-2,102,30.00,03/01/2024 11:00:00 AM
-```
 
 ---
 
@@ -192,18 +183,17 @@ order_id,store_id,order_amount,order_moment_created
 ## Testing & Evidence
 
 #### 1. Success CSV file uploaded to S3
-![Airflow DAG Progress](docs\s3-upload.png)
-
+![S3](docs\s3-upload.png)
 
 #### 2. Lambda execution logs (CloudWatch)
-![Airflow DAG Progress](docs\lambda_function.png)
-![Airflow DAG Progress](docs\lambda_logs.png)
+![lambda](docs\lambda_function.png)
+![lambda2](docs\lambda_logs.png)
 
 #### 3. inserted data in MySQL (RDS)
-![Airflow DAG Progress](docs\inserted_data_rds.png)
+![RDS](docs\inserted_data_rds.png)
 
 #### 4. Docker image stored in Amazon ECR
-![Airflow DAG Progress](docs\ecr_docker_image.png)
+![ECR](docs\ecr_docker_image.png)
 
 ---
 
