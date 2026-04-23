@@ -200,6 +200,6 @@ app.lambda_handler
 ## 👨‍💻 Author
 
 **Juan Esteban Franco**
-Data Engineer | Backend Developer
+Data Engineer | Devops
 
 ---
